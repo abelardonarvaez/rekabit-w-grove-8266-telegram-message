@@ -1,5 +1,5 @@
 input.onButtonPressed(Button.A, function () {
-    esp8266.sendTelegramMessage("8072836824:AAFk-rycrsq79C3ZYxuWngwVzoIFtICfnBk", "-4672732933", "Test")
+    esp8266.sendTelegramMessage("", "", "Test")
     if (esp8266.isTelegramMessageSent()) {
         basic.showIcon(IconNames.Yes)
     } else {
@@ -13,7 +13,7 @@ if (esp8266.isESP8266Initialized()) {
 } else {
     basic.showIcon(IconNames.Sad)
 }
-esp8266.connectWiFi("LIB-0243726", "y7nCvjnshmzp")
+esp8266.connectWiFi("", "")
 basic.showString("Connect")
 if (esp8266.isWifiConnected()) {
     basic.showIcon(IconNames.Happy)
